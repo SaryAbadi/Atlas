@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas</title>
+    <link rel="stylesheet" href="boostrap/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="https://www.pngkey.com/png/full/251-2513526_icon-small-globe-icon.png"
+        type="image/x-icons">
+    <script type="module" defer src="js/appAtlas.js"></script>
+</head>
+
+<body>
+    <!-- start header -->
+    <header class="container-fluid sticky">
+        <div class="container d-flex justify-content-between p-3">
+            <nav id="nav_open" class="align-items-center">
+                <a id="id_home" class="display-6" href="#">HOME</a>
+                <a id="id_israel" href="#">ISRAEL</a>
+                <a id="id_usa" href="#">USA</a>
+                <a id="id_thailand" href="#">THAILAND</a>
+                <a id="id_france" href="#">FRANCE</a>
+            </nav>
+
+            <div>
+                <i id="burger_btn" class="fa fa-bars" aria-hidden="true"></i>
+                <i id="close_btn" class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+            <div class="d-flex">
+                <input type="text" id="id_input" placeholder="Search country" name="list" list="list" class="w-100">
+
+                <datalist id="list">
+                </datalist>
+                <button id="btn_search" class="btn"> <i class="fa fa-search" style="color:white;"
+                        aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start main -->
+    <main class="container-fluid ">
+        <div id="view" class="center">
+        </div>
+    </main>
+    <!-- end main -->
+
+    <!-- start footer -->
+    <footer class="p-3 text-end" style="background-color: rgba(0, 0, 0, 0.486);">
+        <span style="font-size:large; font-weight: bold; color: greenyellow;"> Sary Abadi | Full Stack | 2023</span>
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

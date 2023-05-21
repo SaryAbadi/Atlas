@@ -1,0 +1,147 @@
+body {
+    background-image: url(images/backround.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/* start header */
+header {
+    background-color: rgba(255, 255, 255, 0.233);
+}
+
+nav a {
+    text-decoration: none;
+    color: greenyellow;
+    padding: 4px 8px;
+    font-size: 25px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+header .btn {
+    background-color: greenyellow;
+    color: white;
+    border-color: white;
+}
+
+header .btn:hover {
+    color: white;
+}
+
+header #burger_btn,
+header #close_btn {
+    display: none;
+    text-align: right;
+    color: white;
+    font-size: 48px;
+    cursor: pointer;
+}
+
+/* end header */
+
+/* start main */
+main {
+    margin: 30px;
+    min-height: 400px;
+}
+
+h2 {
+    font-size: 50px !important;
+}
+
+.img-fluid {
+    background-size: cover;
+    background-position: center;
+    height: 230px;
+}
+
+.responsive-map {
+    height: 250px;
+}
+
+.country {
+    width: 900px;
+    background-color: rgba(255, 255, 255, 0.549);
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.549);
+}
+
+.flag {
+    width: 24%;
+    cursor: pointer;
+}
+
+.link {
+    color: black;
+}
+
+.link:hover {
+    font-weight: bold;
+    color: black;
+}
+/* end main */
+
+@media(max-width:992px) {
+    header #close_btn {
+        display: block;
+    }
+
+    header nav {
+        position: absolute;
+        top: 80px;
+        left: 15px;
+        display: block;
+        width: 140px;
+        background: black;
+        z-index: 999;
+    }
+
+    header nav a {
+        display: block;
+        padding: 16px;
+        color: greenyellow;
+        text-align: center;
+        border-bottom: 1px solid greenyellow;
+    }
+
+    header nav a:hover {
+        background: greenyellow;
+        color: black;
+    }
+
+    .country {
+        width: 400px;
+        padding: 4px;
+        text-align: center;
+    }
+
+    .flag {
+        width: 90%;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+}
+
+@media (min-width:993px) {
+    header nav {
+        display: block !important;
+    }
+
+    header #burger_btn,
+    header #close_btn {
+        display: none !important;
+    }
+}
